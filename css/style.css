@@ -62,8 +62,11 @@
     font-size: 30px;
 }
 
-/* img-crosel */
-/* .img-crosel{
-    height: 200px;
-    width: 100%;
-} */
+.link-f{
+    font-size: 25px;
+    color: white;
+}
+.link-f a{
+    text-decoration: none;
+    color: white;
+}
