@@ -1,0 +1,23 @@
+.btn-btn{
+    background: #F15A28;
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+.content-align-left{
+    text-align: right;
+}
+.navbar{
+    border-bottom: 10px solid #427E3C;
+    padding: 0 !important;
+}
+.nav-item{
+    padding: 10px;
+}
+.nav-item.active{
+    background: #427E3C;
+}
+.nav-item .nav-link{
+    color: white;
+    font-weight: bold;
+}
