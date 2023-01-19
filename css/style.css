@@ -39,3 +39,25 @@
     color: #F15A28;
     padding: 0 15px;
 }
+/* Rotating-text */
+.Rotating-text{
+    width: 33%;
+}
+.Rotating-text{
+    color: white !important;
+}
+.Rotating-text hr{
+    border: none;
+    width: 50%;
+    height: 5px;
+    background: #000 !important;
+}
+.Rotating-text .bx{
+    padding:  20px 0;
+}
+.Rotating-text .bx h3{
+    font-size: 25px;
+}
+.Rotating-text .bx h4{
+    font-size: 30px;
+}
