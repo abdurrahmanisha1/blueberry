@@ -8,32 +8,75 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arya&family=Great+Vibes&family=Inter:wght@100;200;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Document</title>
+    <style>
+        .owl-next {
+            position: absolute !important;
+            top: 60px !important;
+            right: -40px !important;
+        }
+
+        .owl-next span {
+            font-size: 50px;
+            color: #fff !important;
+        }
+
+        .owl-prev {
+            position: absolute !important;
+            top: 60px !important;
+            left: -40px !important;
+        }
+
+        .owl-prev span {
+            font-size: 50px;
+            color: #fff !important;
+        }
+
+        .image .owl-stage-outer .owl-stage .owl-item {
+            background-color: #4d9946;
+            margin-top: 18px !important;
+            /* margin-right: 30px !important;
+            width: 296px !important; */
+        }
+    </style>
 </head>
 
 <body>
     <!-- header  -->
-    <header>
-        <section class="container bg-light">
+    <header class="container-fluid">
+        <section class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 mobileImage">
                     <img src="image/logo.png" alt="">
                 </div>
-                <div class="col-md-6  content-align-left">
-                    <button class="btn btn-btn mt-5 mb-2">TICKETS</button>
+                <div class="col-md-6  content-align-left mobile-header">
+                    <button class="btn btn-btn mt-5 mb-2">
+                        <i class="fa fa-ticket" aria-hidden="true"></i>
+                        TICKETS
+                    </button>
 
-                    <h2>APRIL 14-16, 2023</h2>
-                    <h4>3344 Ranch Road | York, ME 04234</h4>
+                    <h2 class="header-date">APRIL 14-16, 2023</h2>
+                    <h4 class="header-title">3344 Ranch Road | York, ME 04234</h4>
                 </div>
             </div>
         </section>
         <!-- Nav bar -->
-        <nav class="navbar mt-3 navbar-expand-lg navbar-light" style="background: #4d9946;">
+        <nav class="navbar mt-3 navbar-expand-lg navbar-light" style="background: #3D8C5A;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="container">
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">HOME</a>
@@ -54,16 +97,54 @@
                 </div>
             </div>
         </nav>
+
     </header>
     <!-- header  -->
 
-    <section class="banner">
+    <section class="banner container-fluid">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+            <div class="carousel-inner claenders">
                 <div class="carousel-item active">
+                    <div class="claender-items">
+                        <div class="calender-item active">
+                            <p class="claender-item-date active-color days">19</p>
+                            <p class="time active-color">Days</p>
+                        </div>
+                        <div class="calender-item">
+                            <p class="claender-item-date hours">3</p>
+                            <p class="time">Hours</p>
+                        </div>
+                        <div class="calender-item">
+                            <p class="claender-item-date mins">52</p>
+                            <p class="time">Minutes</p>
+                        </div>
+                        <div class="calender-item">
+                            <p class="claender-item-date secs">23</p>
+                            <p class="time">Secondds</p>
+                        </div>
+                    </div>
+
                     <img src="image/slider1.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
+                    <div class="claender-items">
+                        <div class="calender-item active">
+                            <p class="claender-item-date active-color days">19</p>
+                            <p class="time active-color">Days</p>
+                        </div>
+                        <div class="calender-item">
+                            <p class="claender-item-date hours">3</p>
+                            <p class="time">Hours</p>
+                        </div>
+                        <div class="calender-item">
+                            <p class="claender-item-date mins">52</p>
+                            <p class="time">Minutes</p>
+                        </div>
+                        <div class="calender-item">
+                            <p class="claender-item-date secs-2">23</p>
+                            <p class="time">Secondds</p>
+                        </div>
+                    </div>
                     <img src="image/slider2.jpg" class="d-block w-100" alt="...">
                 </div>
                 <!-- <div class="carousel-item">
@@ -83,20 +164,56 @@
         </div>
     </section>
 
-    <!-- Rotating text here -->
-    <section>
-        <section class="rotating pt-5 pb-4">
-            <div class="box mx-auto">
-                <hr>
-                <h2>Rotating text here</h2>
-                <hr>
+    <div class="container calenders-2">
+        <div class="claender-items2">
+            <div class="calender-item-2 active">
+                <p class="claender-item-date-2 active-color days">19</p>
+                <p class="time-2 active-color">Days</p>
             </div>
-        </section>
+            <div class="calender-item-2">
+                <p class="claender-item-date-2 hours">3</p>
+                <p class="time-2">Hours</p>
+            </div>
+            <div class="calender-item-2">
+                <p class="claender-item-date-2 mins">52</p>
+                <p class="time-2">Minutes</p>
+            </div>
+            <div class="calender-item-2">
+                <p class="claender-item-date-2 secs">23</p>
+                <p class="time-2">Secondds</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rotating text here -->
+    <section class="container-fluid" style="background-color: #fff;">
+
+        <div class="owl-carousel rolatings">
+            <div class="rolating-sec">
+                <div class="arrow"></div>
+                Rolating Text Here
+                <div class="arrow right"></div>
+            </div>
+            <div class="rolating-sec">
+                <div class="arrow"></div>
+                Rolating Another Text Here
+                <div class="arrow right"></div>
+            </div>
+            <div class="rolating-sec">
+                <div class="arrow"></div>
+                Rolating Text Here
+                <div class="arrow right"></div>
+            </div>
+
+
+
+        </div>
+
         <div class="row d-flex" style="display: flex; justify-content: space-between; flex-wrap: wrap !important;">
-            <!-- column -->
-            <div class="col-md-4 col-12 p-lg-5 Rotating-text" style="background: hsl(0, 27%, 33%);">
-                <h1>WHEN</h1>
-                <hr>
+
+            <div class="col-md-4 col-12  p-lg-5 Rotating-text" style="background: #534741">
+                <h1 class="when-text">WHEN</h1>
+
                 <div class="bx">
                     <h3>FRIDAY, APRIL 14</h3>
                     <h4>11AM - 8PM</h4>
@@ -110,10 +227,10 @@
                     <h4>11AM- 5PM</h4>
                 </div>
             </div>
-            <!-- column -->
-            <div class="col-md-4 col-12 p-lg-5 Rotating-text" style="background: #4d9946;">
-                <h1>COST</h1>
-                <hr>
+
+            <div class="col-md-4 col-12 p-lg-5 Rotating-text" style="background: #3D8C5A;">
+                <h1 class="when-text">COST</h1>
+
                 <div class="bx">
                     <h3>
                         TICKETS ARE $12.00 <br>
@@ -128,10 +245,10 @@
                     </h3>
                 </div>
             </div>
-            <!--  column -->
-            <div class="col-md-4 col-12 p-lg-5 Rotating-text" style="background: hsl(0, 27%, 33%);">
-                <h1>WHEN</h1>
-                <hr>
+
+            <div class="col-md-4 col-12 p-lg-5 Rotating-text" style="background: #534741">
+                <h1 class="when-text">WHEN</h1>
+
                 <div class="bx">
                     <h3>
                         FREE PARKING AND FREE <br>
@@ -144,7 +261,7 @@
     </section>
 
     <!-- TITLE TEXT -->
-    <section class="pt-5 pb-5">
+    <section class="pt-5 pb-5 container">
         <div class="container pt-5 pb-5">
             <h2 class="pb-2" style="color: #F15A28; font-size: 40px; font-weight: bold;">
                 TITLE TEXT
@@ -170,7 +287,7 @@
         </div>
     </section>
     <!-- TITLE TEXT -->
-    <section class="pt-5 pb-5" style="background: hsl(0, 27%, 33%); color: white;">
+    <section class="pt-5 pb-5 mobileMargin" style="background: #534741; color: white;">
         <div class="container pt-5 pb-5">
             <h2 class="pb-2" style="font-size: 40px; font-weight: bold;">
                 TITLE TEXT
@@ -190,56 +307,43 @@
                 in hendrerit in vulputate
             </p>
             <div class="col-md-8 mx-auto pt-5">
-                <img class="img-fluid" src="image/image1.png" alt="">
+                <img class="img-fluid" height="20" src="image/image1.png" alt="">
             </div>
         </div>
     </section>
 
-    <section class="m-0 pt-4 pb-4" style="background: #4d9946; ">
-        <div class="container text-center my-3">
+    <section class="m-0 pt-4 pb-4 container-fluid" style="background: #4d9946; ">
+        <!-- <div class="container text-center my-3">
             <div class="row mx-auto my-auto justify-content-center">
-                <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item carosel-image active">
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <div class="card-img">
-                                        <img src="image/logo3.png" class="img-fluid img-crosel">
-                                    </div>
-                                    <!-- <div class="card-img-overlay">Slide 1</div> -->
-                                </div>
-                            </div>
+                <div id="recipeCarousel" class="carousel slide " data-bs-ride="carousel">
+                    <div class="carousel-inner " role="listbox">
+                        <div class="carousel-item carosel-image active d-flex align-items-center">
+
+                            <img src="image/logo3.png" height="200" class=" mx-3">
+
                         </div>
-                        <div class="carousel-item carosel-image">
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <div class="card-img">
-                                        <img src="image/logo3.png" class="img-fluid img-crosel">
-                                    </div>
-                                    <!-- <div class="card-img-overlay">Slide 3</div> -->
-                                </div>
-                            </div>
+                        <div class="carousel-item carosel-image  ">
+
+                            <img src="image/logo3.png" height="200" class="  mx-3">
+
                         </div>
-                        <div class="carousel-item carosel-image">
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <div class="card-img">
-                                        <img src="image/logo3.png" class="img-fluid  img-crosel">
-                                    </div>
-                                    <!-- <div class="card-img-overlay">Slide 3</div> -->
-                                </div>
-                            </div>
+                        <div class="carousel-item carosel-image  ">
+
+                            <img src="image/logo3.png" height="200" class="  mx-3">
+
                         </div>
-                        <div class="carousel-item carosel-image">
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <div class="card-img">
-                                        <img src="image/logo3.png" class="img-fluid img-crosel">
-                                    </div>
-                                    <!-- <div class="card-img-overlay">Slide 3</div> -->
-                                </div>
-                            </div>
+                        <div class="carousel-item carosel-image ">
+
+                            <img src="image/logo3.png" height="200" class="mx-3">
+
                         </div>
+                        <div class="carousel-item carosel-image  ">
+
+                            <img src="image/logo3.png" height="200" class=" mx-3">
+
+                        </div>
+
+
                     </div>
                     <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
                         data-bs-slide="prev">
@@ -251,13 +355,36 @@
                     </a>
                 </div>
             </div>
+        </div> -->
+
+        <div class="container">
+            <div class="owl-carousel image">
+                <div style="height: 200px; width: 200px; ">
+                    <img src="image/logo3.png" style="height: 100%; width: 100%;">
+                </div>
+                <div style="height: 200px; width: 200px; ">
+                    <img src="image/logo3.png" style="height: 100%; width: 100%;">
+                </div>
+                <div style="height: 200px; width: 200px; ">
+                    <img src="image/logo3.png" style="height: 100%; width: 100%;">
+                </div>
+                <div style="height: 200px; width: 200px; ">
+                    <img src="image/logo3.png" style="height: 100%; width: 100%;">
+                </div>
+                <div style="height: 200px; width: 200px; ">
+                    <img src="image/logo3.png" style="height: 100%; width: 100%;">
+                </div>
+
+
+            </div>
         </div>
+
     </section>
 
     <!-- ------------------------------------------- -->
-    <section style="background: #F15A28;" class="pt-5 pb-5">
+    <section style="background: #F15A28;" class="pt-5 pb-5 container-fluid">
         <div class="container">
-            <h1 class="text-center text-white pb-4">Special Thanks to our Sponsor</h1>
+            <h1 class="text-center text-white pb-4 pt-5" style="font-size: 35px;">Special Thanks to our Sponsor</h1>
             <div class="col-md-4 mx-auto">
                 <img src="image/logo2.png" class="img-fluid" alt="">
             </div>
@@ -268,16 +395,17 @@
     <!-- ------------------------------------------- -->
 
     <!-- ==========   footer ------------- -->
-    <footer>
-        <section style="background: #251c18;" class="pt-2 pb-2">
+    <footer class="container-fluid">
+        <section style="background: #352F2D;" class="pt-2 pb-2">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-2">
+                <div class="d-flex justify-content-between flex-wrap mobile-footer-flex">
+                    <div class="">
                         <img src="image/logo.png" class="img-fluid" alt="">
                     </div>
-                    <div class="col-md-6">
+                    <div class="">
                         <h1 class="pt-5" style="color: #F15A28;">APRIL 14-16, 2023</h1>
-                        <h2 class="text-white">3344 Ranch Road | York, ME 04234</h2>
+                        <h2 class="text-white" style="font-size: 25px; font-weight: 200;">3344 Ranch Road | York, ME
+                            04234</h2>
                         <div class="link-f">
                             <a href="#">HOME</a> |
                             <a href="#">MAP</a> |
@@ -286,9 +414,13 @@
                             <a href="#">DIRECTIONS</a> |
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <img src="image/logo.png" class="img-fluid" alt="">
-                        <img src="image/logo.png" class="img-fluid" alt="">
+                    <div class=" d-flex mt-4">
+                        <a href="">
+                            <img src="./image/facebook.png" class="me-2" height="130" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./image/email.png" height="110" class="mt-2" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -297,16 +429,106 @@
         <!-- ------------------------------------------- -->
         <section>
             <div class="container p-2">
-                <h2 class="text-center">copyright 2023</h2>
+                <h2 class="text-center" style="font-size: 22px; font-weight: 400;">copyright 2023</h2>
             </div>
         </section>
     </footer>
     <!-- ------------------------------------------- -->
 
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.image').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+        $('.rolatings').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+
+    </script>
+    <script>
+        var dt = new Date();
+        dt.setDate(dt.getDate() + 30);
+        var endtime = dt;
+        //console.log(endtime);
+        function getTimeRemaining(endtime) {
+            var now = new Date();
+            //    // console.log(now);
+            var utc = new Date(now.getTime() + now.getTimezoneOffset() * 60000);
+            //     console.log(now)
+            const total = Date.parse(endtime) - Date.parse(utc) - 10800000;
+            const seconds = Math.floor((total / 1000) % 60);
+            const minutes = Math.floor((total / 1000 / 60) % 60);
+            const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+            const days = Math.floor(total / (1000 * 60 * 60 * 24));
+            return {
+                total,
+                days,
+                hours,
+                minutes,
+                seconds
+            };
+        }
+        function initializeClock(id, endtime) {
+            //const clock = document.getElementById(id);
+            const timeinterval = setInterval(() => {
+                const t = getTimeRemaining(endtime);
+                $('.days').html(t.days);
+                $('.hours').html(t.hours);
+                $('.mins').html(t.minutes);
+                $('.secs').html(t.seconds);
+                $('.days-2').html(t.days);
+                $('.hours-2').html(t.hours);
+                $('.mins-2').html(t.minutes);
+                $('.secs-2').html(t.seconds);
+                if (t.total <= 0) {
+                    clearInterval(timeinterval)
+                }
+            }, 1000);
+        }
+        initializeClock('time', endtime)
+    </script>
 </body>
 
 </html>
