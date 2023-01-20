@@ -213,6 +213,7 @@ body{
     margin-left: 20px;
     margin-top: 25px;
 }
+
 @media (min-width:768px){
     .calenders-2{
         display: none;
@@ -255,4 +256,12 @@ display: none;
 .mobile-footer-flex{
     justify-content: center !important;
 }
+.image .owl-stage-outer .owl-stage .owl-item {
+    /* background-color: #4d9946; */
+    /* margin-top: 18px !important; */
+    /* margin-right: 30px !important;
+    width: 296px !important; */
+    margin: 0px 40px -120px 10px;
+}
   }
+

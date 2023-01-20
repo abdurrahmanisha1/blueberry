@@ -46,6 +46,28 @@
             margin-top: 18px !important;
             /* margin-right: 30px !important;
             width: 296px !important; */
+            margin: 0px 20px -120px 10px;
+        }
+        
+
+        @media (max-width: 480px) {
+
+            .image .owl-stage-outer .owl-stage .owl-item {
+
+                margin: 0px 20px -120px 10px;
+            }
+
+            .owl-prev {
+                position: absolute !important;
+                top: 64px !important;
+                left: -2px !important;
+            }
+
+            .owl-next {
+                position: absolute !important;
+                top: 64px !important;
+                right: -2px !important;
+            }
         }
     </style>
 </head>
@@ -453,15 +475,19 @@
     <script>
         $('.image').owlCarousel({
             loop: true,
-            margin: 10,
             nav: true,
+            // center: true,
+            margin: 10,
+            autoplay: true,
 
             responsive: {
                 0: {
-                    items: 1
+                    items: 1,
+                    center: true
                 },
                 600: {
-                    items: 1
+                    items: 1,
+                    center: true
                 },
                 1000: {
                     items: 4
