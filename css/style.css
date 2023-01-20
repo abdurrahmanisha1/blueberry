@@ -250,6 +250,7 @@ body {
     margin-left: 20px;
     margin-top: 25px;
 }
+
 .owl-next {
     position: absolute !important;
     top: 60px !important;
@@ -280,7 +281,24 @@ body {
     margin: 0px 20px -120px 10px;
 }
 
-.map-link a{
+.map-link a {
     text-decoration: none;
     color: #000000;
+}
+
+/* table */
+table thead tr {
+    background: #352F2D;
+    color: white;
+    font-size: 22px;
+}
+
+table tbody tr:nth-child(odd) {
+    background: #dadada;
+    font-size: 22px;
+}
+
+table tbody tr:nth-child(even) {
+    background: #ffffff;
+    font-size: 22px;
 }
