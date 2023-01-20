@@ -1,30 +1,34 @@
-
-body{
+body {
     font-family: 'Inter', sans-serif;
 }
-.header-date{
+
+.header-date {
     font-size: 31px;
     margin-top: 20px;
     color: #3d8c5a;
     font-weight: 600;
 }
-.header-title{
+
+.header-title {
     color: #000000;
     font-weight: 600;
 }
-.claenders{
+
+.claenders {
     position: relative;
 }
-.calender-item{
+
+.calender-item {
 
     background-color: #fff;
     margin-right: 20px;
     width: 100px;
     height: 100px;
     border-radius: 10px;
- 
+
 }
-.calender-item-2{
+
+.calender-item-2 {
 
     background-color: #fff;
     margin-right: 20px;
@@ -32,20 +36,23 @@ body{
     height: 80px;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
- 
+
 }
-.claender-items{
+
+.claender-items {
     position: absolute;
     right: 50px;
     display: flex;
     top: 50px;
 }
-.claender-items2{
+
+.claender-items2 {
     display: flex;
 
     margin: 10px 0;
 }
-.time{
+
+.time {
     margin: -7PX;
     padding: 0;
     text-align: center;
@@ -54,7 +61,8 @@ body{
     text-transform: uppercase;
     font-size: 14px;
 }
-.time-2{
+
+.time-2 {
     margin: -7PX;
     padding: 0;
     text-align: center;
@@ -63,136 +71,163 @@ body{
     text-transform: uppercase;
     font-size: 12px;
 }
-.claender-item-date{
-    margin: 15px 0 0 0 !important; 
+
+.claender-item-date {
+    margin: 15px 0 0 0 !important;
     padding: 0 !important;
     font-size: 35px;
     text-align: center;
     color: #f15a24;
     font-weight: 600;
 }
-.claender-item-date-2{
-    margin: 15px 0 0 0 !important; 
+
+.claender-item-date-2 {
+    margin: 15px 0 0 0 !important;
     padding: 0 !important;
     font-size: 25px;
     text-align: center;
     color: #f15a24;
     font-weight: 600;
 }
-.active{
+
+.active {
     background-color: #f15a24;
 }
-.active-color{
-    color:#fff ;
+
+.active-color {
+    color: #fff;
 }
-.section-title{
+
+.section-title {
     text-align: center;
     margin: 0 30px;
     font-size: 40px;
     color: #f15a24;
 }
-.left-arrow{
+
+.left-arrow {
     background-color: #4A914A;
     height: 7px;
     width: 50px;
     margin-top: 20px;
 }
-.when-text{
+
+.when-text {
     width: 50%;
     border-bottom: 5px solid #fff;
     padding-bottom: 20px;
 }
-.btn-btn{
+
+.btn-btn {
     background: #F15A28;
     color: white;
     font-weight: bold;
     padding: 5px 20px;
     font-size: 25px;
 }
-.btn-btn:hover{
+
+.btn-btn:hover {
     background: #427E3C;
     color: #fff;
 }
-.content-align-left{
+
+.content-align-left {
     text-align: right;
 }
-.navbar{
+
+.navbar {
     border-bottom: 10px solid #427E3C;
     padding: 0 !important;
 }
-.nav-item{
+
+.nav-item {
     padding: 10px;
     font-size: 22px;
 }
-.nav-item.active{
+
+.nav-item.active {
     background: #427E3C;
 }
-.nav-item .nav-link{
+
+.nav-item .nav-link {
     color: white;
     font-weight: bold;
 }
+
 /* rotating */
-.rotating{
+.rotating {
     display: flex;
     align-items: center;
 }
-.rotating .box{
+
+.rotating .box {
     display: flex;
 }
-.rotating .box hr{
+
+.rotating .box hr {
     border: none;
     width: 50px;
     height: 10px;
     background: #000 !important;
 }
-.rotating .box h2{
+
+.rotating .box h2 {
     color: #F15A28;
     padding: 0 15px;
 }
+
 /* Rotating-text */
-.Rotating-text{
+.Rotating-text {
     /* width: 33%; */
-    
+
 }
-.Rotating-text{
+
+.Rotating-text {
     color: white !important;
 }
-.Rotating-text hr{
+
+.Rotating-text hr {
     border: none;
     width: 50%;
     height: 5px;
     background: #000 !important;
 }
-.Rotating-text .bx{
-    padding:  20px 0;
+
+.Rotating-text .bx {
+    padding: 20px 0;
 }
-.Rotating-text .bx h3{
+
+.Rotating-text .bx h3 {
     font-size: 22px;
 }
-.Rotating-text .bx h4{
+
+.Rotating-text .bx h4 {
     font-size: 26px;
     font-weight: 200;
 }
 
-.link-f{
+.link-f {
     font-size: 20px;
     font-weight: 500;
     color: white;
 }
-.link-f a{
+
+.link-f a {
     text-decoration: none;
     color: white;
-    margin:0 10px;
+    margin: 0 10px;
 }
-.fa{
+
+.fa {
     font-size: 50px;
     color: #fff;
 }
-.fa:hover{
+
+.fa:hover {
     color: #F15A28;
 }
 
-.rolating-sec{
+.rolating-sec {
     text-align: center;
     background-color: #fff;
     font-size: 35px;
@@ -202,66 +237,76 @@ body{
     display: flex;
     justify-content: center;
 }
-.arrow{
+
+.arrow {
     height: 7px;
     width: 40px;
     background-color: #3d8c5a;
     margin-top: 20px;
     margin-right: 20px;
 }
-.right{
+
+.right {
     margin-left: 20px;
     margin-top: 25px;
 }
 
-@media (min-width:768px){
-    .calenders-2{
+@media (min-width:768px) {
+    .calenders-2 {
         display: none;
     }
 }
 
 @media (max-width: 768px) {
-   .calender-item{
-display: none;
- 
-}
-.owl-prev {
-    position: absolute !important;
-    top: 60px !important;
-    left: 0px !important;
-}
-.owl-next {
-    position: absolute !important;
-    top: 60px !important;
-    right: 0px !important;
-}
-.mobileImage{
-    justify-content: center;
-    display: flex;
-}
-.mobile-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.header-title{
-    text-align: center;
-}
-.when-text{
-    margin-top: 20px;
-}
-.mobileMargin{
-    padding: 0 20px;
-}
-.mobile-footer-flex{
-    justify-content: center !important;
-}
-.image .owl-stage-outer .owl-stage .owl-item {
-    /* background-color: #4d9946; */
-    /* margin-top: 18px !important; */
-    /* margin-right: 30px !important;
-    width: 296px !important; */
-    margin: 0px 40px -120px 10px;
-}
-  }
+    .calender-item {
+        display: none;
 
+    }
+
+    .owl-prev {
+        position: absolute !important;
+        top: 60px !important;
+        left: 0px !important;
+    }
+
+    .owl-next {
+        position: absolute !important;
+        top: 60px !important;
+        right: 0px !important;
+    }
+
+    .mobileImage {
+        justify-content: center;
+        display: flex;
+    }
+
+    .mobile-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-title {
+        text-align: center;
+    }
+
+    .when-text {
+        margin-top: 20px;
+    }
+
+    .mobileMargin {
+        padding: 0 20px;
+    }
+
+    .mobile-footer-flex {
+        justify-content: center !important;
+    }
+
+    .image .owl-stage-outer .owl-stage .owl-item {
+        /* background-color: #4d9946; */
+        /* margin-top: 18px !important; */
+        /* margin-right: 30px !important;
+    width: 296px !important; */
+        margin: 0px 40px -120px 10px;
+    }
+}
