@@ -250,63 +250,37 @@ body {
     margin-left: 20px;
     margin-top: 25px;
 }
-
-@media (min-width:768px) {
-    .calenders-2 {
-        display: none;
-    }
+.owl-next {
+    position: absolute !important;
+    top: 60px !important;
+    right: -40px !important;
 }
 
-@media (max-width: 768px) {
-    .calender-item {
-        display: none;
+.owl-next span {
+    font-size: 50px;
+    color: #fff !important;
+}
 
-    }
+.owl-prev {
+    position: absolute !important;
+    top: 60px !important;
+    left: -40px !important;
+}
 
-    .owl-prev {
-        position: absolute !important;
-        top: 60px !important;
-        left: 0px !important;
-    }
+.owl-prev span {
+    font-size: 50px;
+    color: #fff !important;
+}
 
-    .owl-next {
-        position: absolute !important;
-        top: 60px !important;
-        right: 0px !important;
-    }
-
-    .mobileImage {
-        justify-content: center;
-        display: flex;
-    }
-
-    .mobile-header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header-title {
-        text-align: center;
-    }
-
-    .when-text {
-        margin-top: 20px;
-    }
-
-    .mobileMargin {
-        padding: 0 20px;
-    }
-
-    .mobile-footer-flex {
-        justify-content: center !important;
-    }
-
-    .image .owl-stage-outer .owl-stage .owl-item {
-        /* background-color: #4d9946; */
-        /* margin-top: 18px !important; */
-        /* margin-right: 30px !important;
+.image .owl-stage-outer .owl-stage .owl-item {
+    background-color: #4d9946;
+    margin-top: 18px !important;
+    /* margin-right: 30px !important;
     width: 296px !important; */
-        margin: 0px 40px -120px 10px;
-    }
+    margin: 0px 20px -120px 10px;
+}
+
+.map-link a{
+    text-decoration: none;
+    color: #000000;
 }
